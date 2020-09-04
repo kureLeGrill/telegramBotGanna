@@ -4,7 +4,7 @@ from telegram.ext import Updater
 from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler
 from telegram.ext import Filters
-from send_mail import send_mails
+import send_mail
 
 from echo.config import TG_TOKEN
 
@@ -23,7 +23,7 @@ def do_help(bot: Bot, update: Update):
         chat_id=update.message.chat_id,
         text="Privet! otpravj mne shto nibud",
     )
-    send_mails()
+    send_mail.send_mails()
 
 def do_echo(bot: Bot, update: Update):
     text = update.message.text
@@ -31,7 +31,7 @@ def do_echo(bot: Bot, update: Update):
         chat_id=update.message.chat_id,
         text="Mail send to "+text,
     )
-    send_mails(text)
+    send_mail.send_mails(text)
 
 
 def main():
