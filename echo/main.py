@@ -4,6 +4,7 @@ from telegram.ext import Updater
 from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler
 from telegram.ext import Filters
+#import send_mail
 
 import os
 import smtplib
@@ -11,8 +12,10 @@ import imghdr
 from email.message import EmailMessage
 TG_TOKEN = "1242448847:AAH_bKNPvJgN_QvK1qDJ1_V1WTpezaPV5ow"
 def send_mails(mail_To):
-    EMAIL_ADDRESS = os.environ.get('gannaivanchenko.forpeople@gmail.com')
-    EMAIL_PASSWORD = os.environ.get('dxjivieeucueuhcc')
+    #EMAIL_ADDRESS = os.environ.get('EMAIL_USER')
+    #EMAIL_PASSWORD = os.environ.get('GMAIL_APP_PASSWORD')
+    EMAIL_ADDRESS = 'gannaivanchenko.forpeople@gmail.com'
+    EMAIL_PASSWORD = 'dxjivieeucueuhcc'
 
     msg = EmailMessage()
     msg['Subject'] = 'Завтрак 03.09.2020'
