@@ -10,7 +10,7 @@ import os
 import smtplib
 import imghdr
 from email.message import EmailMessage
-TG_TOKEN = "1384030772:AAH31Ym8Zu9jWlRqU01LQclvMWv-6JN1jOs"
+TG_TOKEN = "1242448847:AAH_bKNPvJgN_QvK1qDJ1_V1WTpezaPV5ow"
 def send_mails(mail_To):
     #EMAIL_ADDRESS = os.environ.get('EMAIL_USER')
     #EMAIL_PASSWORD = os.environ.get('GMAIL_APP_PASSWORD')
