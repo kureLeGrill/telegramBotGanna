@@ -1,0 +1,12 @@
+[Unit]
+Description=Telegram Bot
+After=network.target
+
+[Service]
+User=tele
+Group=vladimir
+WorkingDirectory=/home/tele/telegramBotGanna/
+Environment="PYTHONPATH=/home/tele/telegramBotGanna/"
+ExecStart=/home/tele/telegramBotGanna/.venv/bin/python /home/tele/telegramBotGanna/echo/main.py
+
+[Install] WantedBy=multi-user.target
