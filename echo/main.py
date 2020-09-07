@@ -10,16 +10,12 @@ import os
 import smtplib
 import imghdr
 from email.message import EmailMessage
-
-TG_TOKEN = "1242448847:AAH_bKNPvJgN_QvK1qDJ1_V1WTpezaPV5ow"
-
-
+TG_TOKEN = "1384030772:AAH31Ym8Zu9jWlRqU01LQclvMWv-6JN1jOs"
 def send_mails(mail_To):
     #EMAIL_ADDRESS = os.environ.get('EMAIL_USER')
     #EMAIL_PASSWORD = os.environ.get('GMAIL_APP_PASSWORD')
-    EMAIL_ADDRESS = "gannaivanchenko.forpeople@gmail.com"
-    EMAIL_PASSWORD = "dxjivieeucueuhcc"
-
+    EMAIL_ADDRESS = 'gannaivanchenko.forpeople@gmail.com'
+    EMAIL_PASSWORD = 'dxjivieeucueuhcc'
 
     msg = EmailMessage()
     msg['Subject'] = 'Завтрак 03.09.2020'
