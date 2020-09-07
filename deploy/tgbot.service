@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 User=tele
-Group=Tele
+Group=tele
 WorkingDirectory=/home/tele/telegramBotGanna/
 Environment="PYTHONPATH=/home/tele/telegramBotGanna/"
 ExecStart=/home/tele/telegramBotGanna/.venv/bin/python /home/tele/telegramBotGanna/echo/main.py
